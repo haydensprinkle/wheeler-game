@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+h1{
+    font-size: 6vw;
+}
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#textarea {
+  width: 50%;
+  height: auto;
+  background-color: black;
+}
+@keyframes invert-image {
+  from {
+    filter: invert(0);
+  }
+  to {
+    filter: invert(1);
+  }
+}
+img {
+  padding: 10px;
+  width: 25%;
+}
+main img:nth-child(1) {
+  animation: invert-image 2s infinite alternate-reverse;
+}
+#otisface2 {
+  animation: invert-image 2s infinite alternate-reverse;
+  animation-delay: 2s;
+}
